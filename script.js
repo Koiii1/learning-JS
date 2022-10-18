@@ -1,57 +1,21 @@
 "use strict";
  
-console.log('arr'+ "-object");
-console.log(4 + "5");
+const numberOfFilms = +prompt("How many films did you watch?", "");
 
-let incr = 10,
-    decr = 10;
+const personaMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
 
-    // incr++;
-    // decr--;
+const a = prompt ("What was the last film that you've watched?", ""),
+      b = prompt ("How was it?",""),
+      c = prompt ("What was the last film that you've watched?", ""),
+      d = prompt ("How was it?","");
 
-    console.log(++incr);
-    console.log(--decr);
+      personaMovieDB.movies[a] = b;
+      personaMovieDB.movies[c] = d;
 
-
-    console.log(5%2);
-
-    console.log(2+2*2 !== '6');
-
-
-    const isChecked = false,
-          isClose = false;
-
-    console.log(isChecked || !isClose);
-
-
-
-
-
-// const category = 'toys';
-
-// console.log(`https://someurl.com/${category}/5`);
-
-// const user = 'Viktor';
-
-// alert (`Hello, ${user}`);
-
-
-
-
-
-//alert('Hello World!');
-
-//const result = confirm("Are you here?");
-//console.log(result);
-
-// const answer = +prompt("How old are you?", "18");
-// console.log(answer +5);
-
-// const answers = [];
-
-// answers[0] = prompt (' What is your name?', '');
-// answers[1] = prompt (' What is your surname?', '');
-// answers[2] = prompt (' Hpw old are you?', '');
-
-// console.log(typeof(answers)); 
-
+      console.log (personaMovieDB);
