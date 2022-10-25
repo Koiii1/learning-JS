@@ -19,6 +19,15 @@
 // console.log(result);
 
 
+const result = "";
+let len = 5;
+
+for (let i=)
+
+
+
+
+
 // first: for (let i = 0; i < 3; i++){
 //     console.log(`First level: ${i}`); 
 //     for (let j = 0; j < 3; j++){
@@ -98,13 +107,13 @@
 // console.log(data);
 // return data;
 
-const data = [5, 10, 'Shopping', 20, 'Homework'];
-const result = [];
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
 
 
    
-console.log(result);
-return result;
+// console.log(result);
+// return result;
 
 
 
