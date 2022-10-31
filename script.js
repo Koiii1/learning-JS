@@ -23,7 +23,7 @@ const personaMovieDB = {
 function rememberMyFilms () {
 
       for (let i = 0; i < 2; i++){
-       const a = prompt ("What was the last film that you've watched?", ""),
+       const a = prompt ("What was the last film that you've watched?", "").trim(),
         b = prompt ("How was it?","");
 
     if (a != null && b != null && a != "" && b != ""&& a.length <50){
