@@ -21,19 +21,19 @@ console.log(border, bg);
 // console.log(Object.keys(options).length);
 
 
-// const dota = {
-//     antimag: "creep",
-//     pricepullint: 15,
-//     marci:{
-//         str:30,
-//         agi:20,
-//         int:15
-//     },
-//     morph:"water"
-// };
+const dota = {
+    antimag: "creep",
+    pricepullint: 15,
+    marci:{
+        str:30,
+        agi:20,
+        int:15
+    },
+    morph:"water"
+};
 
-// console.log(dota.morph);
-// console.log(Object.keys(dota),Object.keys(dota.morph).length);
+console.log(dota.morph);
+console.log(Object.keys(dota),Object.keys(dota.morph).length);
 
 
 
