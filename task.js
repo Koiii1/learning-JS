@@ -128,25 +128,84 @@
 
 
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
 
-function sortStudentsByGroups(arr) {
-    arr.sort();
-    let text = "";
-    for (let i = 1; i < arr.length + 1; i++){
-        if(i % 3 === 0 ){
-            text += '\n';
-            console.log(text += arr);
-            break;
+// function sortStudentsByGroups(arr) {
+//     arr.sort();
+//     let text = "";
+//     for (let i = 1; i < arr.length + 1; i++){
+//         if(i % 3 === 0 ){
+//             text += '\n';
+//             console.log(text += arr);
+//             break;
             
-        } 
+//         } 
 
-    }
+//     }
    
     
 
 
 
+// }
+
+// sortStudentsByGroups(students);
+
+
+
+const restorantData = {
+    menu: [
+        {
+            name: 'Salad Caesar',
+            price: '14$'
+        },
+        {
+            name: 'Pizza Diavola',
+            price: '9$'
+        },
+        {
+            name: 'Beefsteak',
+            price: '17$'
+        },
+        {
+            name: 'Napoleon',
+            price: '7$'
+        }
+    ],
+    waitors: [
+        {name: 'Alice', age: 22}, {name: 'John', age: 24}
+    ],
+    averageLunchPrice: '20$',
+    openNow: true
+};
+
+
+// 1) вычеслить средний чек
+// 2) задать две переменный для двух блюд
+function isAverageLunchPriceTrue(fDish, sDish, average) {
+    if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average) {
+        return 'Цена ниже средней';
+    } else {
+        return 'Цена выше средней';
+    }
 }
 
-sortStudentsByGroups(students);
+console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+
+
+
+
+
+// function isOpen(prop) {
+//     let answer = "";
+//     if(!prop){
+//         console.log("Close");
+//     } else{
+//         console.log("Open");
+//     }
+
+    
+// }
+
+
+// isOpen(restorantData.openNow);
